@@ -44,8 +44,8 @@ const PROJECTS = [
     name: "سي شور رأس الحكمة",
     en: "Seashore · Ras El Hekma",
     color: "text-sea",
-    img1: "/images/seashore-1.jpg",
-    img2: "/images/seashore-2.jpg",
+    img1: "https://elevation-realestate.com/en/wp-content/uploads/2021/08/207822888_1993161937498759_8177646097836241512_n-768x432-1.jpg",
+    img2: "https://gprproperty.com/wp-content/uploads/2023/05/هايد-بارك-الساحل-الشمالى-Hyde-Park-North-Coast-9-300x133.webp",
     desc: "قرية هايد بارك الساحلية على 240 فدانًا في الكيلو 210 بقلب خليج رأس الحكمة، بتدرج طبيعي يرتفع حتى 40 مترًا فوق البحر يمنح حوالي 90% من الوحدات إطلالة بحرية. المرحلة الأولى تم تسليمها بالفعل مع افتتاح المنطقة التجارية والشاطئ الخاص واللاجونز — مشروع شغال على أرض الواقع مش على الورق.",
     facts: [
       ["240", "فدان مساحة المشروع"],
@@ -67,8 +67,8 @@ const PROJECTS = [
     name: "هايد بارك التجمع الخامس",
     en: "Hyde Park · New Cairo",
     color: "text-leaf",
-    img1: "/images/newcairo-1.jpg",
-    img2: "/images/newcairo-2.jpg",
+    img1: "https://gprproperty.com/wp-content/uploads/2022/11/كمبوند-هايد-بارك-التجمع-الخامس-Hyde-Park-New-Cairo-15.webp",
+    img2: "https://gprproperty.com/wp-content/uploads/2022/11/كمبوند-هايد-بارك-التجمع-الخامس-Hyde-Park-New-Cairo-13.webp",
     desc: "المشروع الأم لهايد بارك: مدينة متكاملة على أكثر من 1200 فدان على شارع التسعين الشمالي مباشرة، بماستر بلان من Gensler العالمية وحديقة مركزية ضخمة. 7 دقائق من الجامعة الأمريكية، 20 دقيقة من العاصمة الإدارية، وأقل من 30 دقيقة من مطار القاهرة — مجتمع قائم بالفعل بخدماته ومدارسه وناديه ومنطقة Hyde Out الترفيهية.",
     facts: [
       ["1200+", "فدان — مدينة متكاملة"],
@@ -199,7 +199,7 @@ export default function Page() {
         className="relative min-h-[90vh] flex items-center pt-16"
         style={{
           backgroundImage:
-            "linear-gradient(180deg, rgba(22,48,31,.84), rgba(22,48,31,.6) 55%, rgba(22,48,31,.94)), url(/images/hero.jpg)",
+            "linear-gradient(180deg, rgba(22,48,31,.84), rgba(22,48,31,.6) 55%, rgba(22,48,31,.94)), url(https://gprproperty.com/wp-content/uploads/2025/01/Capture-8-1_featured.webp)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  /* Hyde Park — the park: forest green, linen, brass */
+  --color-forest: #16301f;
+  --color-forest-2: #1f3f2a;
+  --color-leaf: #3c6b4a;
+  --color-linen: #f5f2ea;
+  --color-linen-2: #ebe6d9;
+  --color-brass: #b08d3e;
+  --color-brass-2: #caa758;
+  --color-sea: #1f7f93;
+
+  --font-body: "IBM Plex Sans Arabic", system-ui, sans-serif;
+  --font-latin: "Playfair Display", serif;
+}
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+.font-latin { font-family: var(--font-latin); }
+.font-body { font-family: var(--font-body); }
+
+@keyframes soft-pulse {
+  0%,100% { box-shadow: 0 0 0 0 rgba(37,211,102,.45); }
+  55% { box-shadow: 0 0 0 14px rgba(37,211,102,0); }
+}
+.wa-pulse { animation: soft-pulse 2.2s infinite; }
+
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in-view { opacity: 1; transform: none; }
+
+.hairline { border-color: rgba(22,48,31,.14); }

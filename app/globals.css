@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  /* Hyde Park — the park: forest green, linen, brass */
-  --color-forest: #16301f;
-  --color-forest-2: #1f3f2a;
-  --color-leaf: #3c6b4a;
-  --color-linen: #f5f2ea;
-  --color-linen-2: #ebe6d9;
-  --color-brass: #b08d3e;
-  --color-brass-2: #caa758;
-  --color-sea: #1f7f93;
+  /* One Hyde Park — charcoal + park green + brass */
+  --color-ink: #1a1d1b;
+  --color-char: #23282a;
+  --color-char-2: #2e3436;
+  --color-park: #2f6b45;
+  --color-park-2: #3f8a59;
+  --color-park-3: #5aa876;
+  --color-brass: #b3903f;
+  --color-brass-2: #cfae5c;
+  --color-bone: #f6f4ef;
+  --color-bone-2: #ece8df;
 
   --font-body: "IBM Plex Sans Arabic", system-ui, sans-serif;
   --font-latin: "Playfair Display", serif;
@@ -18,10 +20,7 @@
 html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
-  }
+  *, *::before, *::after { animation-duration:.01ms !important; transition-duration:.01ms !important; }
 }
 .font-latin { font-family: var(--font-latin); }
 .font-body { font-family: var(--font-body); }
@@ -32,7 +31,17 @@ html { scroll-behavior: smooth; }
 }
 .wa-pulse { animation: soft-pulse 2.2s infinite; }
 
-.reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
-.reveal.in-view { opacity: 1; transform: none; }
+@keyframes marquee-fade {
+  0%,100% { opacity: .85 }
+  50% { opacity: 1 }
+}
+.ann-pulse { animation: marquee-fade 2.6s ease-in-out infinite; }
 
-.hairline { border-color: rgba(22,48,31,.14); }
+.reveal { opacity:0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in-view { opacity:1; transform:none; }
+
+.hairline { border-color: rgba(26,29,27,.13); }
+
+/* hide number input arrows */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button { -webkit-appearance:none; margin:0 }

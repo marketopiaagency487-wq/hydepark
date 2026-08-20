@@ -13,7 +13,7 @@ const waLink = (msg: string) =>
 const WA_DEFAULT = waLink(
   "مرحباً، أريد الاستفسار عن أسعار ون هايد بارك One Hyde Park بكمبوند هايد بارك التجمع الخامس"
 );
-const WEB3FORMS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY"; // TODO
+const WEB3FORMS_KEY = "1169ef1b-1b57-4da4-8da1-f0dc46dd3fb3"; // TODO
 
 // Conversion labels — PLACEHOLDERS
 const CONV_FORM = "AW-XXXXXXXXXX/FORM_LABEL"; // TODO
